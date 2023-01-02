@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page - SocialBook</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <!-- nav section starts -->
+
+    <nav>
+
+        <div class="nav-left">
+             <a href="index.html">
+            <img src="./images/logo (1).png" class="logo">
+             </a>
+
+            <ul>
+                <li><img src="/images/notification.png"></li>
+                <li><img src="/images/inbox.png"></li>
+                <li><img src="/images/video.png"></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="/images/search (1).png">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="/images/profile-pic.png">
+            </div>
+
+        </div>
+
+        <!-- settings menu -->
+
+        <div class="settings-menu">
+
+          <div id="dark-btn">
+
+            <span></span>
+
+          </div>
+
+          <div class="settings-menu-inner">
+
+            <div class="user-profile">
+              <img src="/images/profile-pic.png">
+              <div>
+                <p>Jhon Nicholson</p>
+                 <a href="profile.html">See your profile</a>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="user-profile">
+              <img src="/images/feedback.png">
+              <div>
+                <p>Give Feedback</p>
+                 <a href="#">help us to improve the new design</a>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="settings-links">
+
+              <img src="/images/setting.png" class="settings-icon">
+              <a href="#">Settings & Privacy <img src="/images/arrow.png" width="10px"></a>
+
+            </div>
+
+            <div class="settings-links">
+
+              <img src="/images/help.png" class="settings-icon">
+              <a href="#">Help & Support <img src="/images/arrow.png" width="10px"></a>
+
+            </div>
+
+            <div class="settings-links">
+
+              <img src="/images/display.png" class="settings-icon">
+              <a href="#">Display & Accessibility <img src="/images/arrow.png" width="10px"></a>
+
+            </div>
+
+            <div class="settings-links">
+
+              <img src="/images/logout.png" class="settings-icon">
+              <a href="#">Logout <img src="/images/arrow.png" width="10px"></a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+    </nav>
+
+    <!-- nav section ends -->
+
+    <!-- profile starts -->
+
+    <div class="profile-container">
+
+        <img src="/images/cover.png" class="cover-img">
+
+        <div class="profile-details">
+            <div class="pd-left">
+
+               <div class="pd-row">
+                <img src="/images/profile.png" class="pd-image">
+
+                <div>
+                    <h3>Jack Nicholson</h3>
+                    <p>120 Friends 20 mutual</p>
+                </div>
+               </div>
+
+            </div>
+
+            <div class="pd-right">
+
+                <button type="button"><img src="/images/add-friends.png"> Friend</button>
+                <button type="button"><img src="/images/message.png"> Message</button>
+                <br>
+                <a href=""><img src="/images/more.png"></a>
+
+            </div>
+        </div>
+
+        <div class="profile-info">
+
+            <div class="info-col">
+
+              <div class="profile-intro">
+
+                <h3>Intro</h3>
+                <p class="intro-text">Believe in yourself and you can do unbelievable things. <img src="/images/feeling.png"></p>
+                 <hr>
+
+                 <ul>
+                  <li><img src="/images/profile-job.png"> Director at 99media Ltd</li>
+                  <li><img src="/images/profile-study.png"> Studied at Dhaka University</li>
+                  <li><img src="/images/profile-study.png"> Went to Dhaka</li>
+                  <li><img src="/images/profile-home.png"> Lives in Noakhali, Chittagong</li>
+                  <li><img src="/images/profile-location.png"> From Bangaladesh</li>
+                 </ul>
+              </div>
+
+              <div class="profile-intro">
+
+                <div class="title-box">
+                  <h3>Photos</h3>
+                  <a href="">All Photos</a>
+                </div>
+
+                <div class="photo-box">
+                  <div><img src="/images/photo1.png"></div>
+                  <div><img src="/images/photo2.png"></div>
+                  <div><img src="/images/photo3.png"></div>
+                  <div><img src="/images/photo4.png"></div>
+                  <div><img src="/images/photo5.png"></div>
+                  <div><img src="/images/photo6.png"></div>
+                </div>
+
+              </div>
+
+              
+              <div class="profile-intro">
+
+                <div class="title-box">
+                  <h3>Friends</h3>
+                  <a href="">All Friends</a>
+                </div>
+                <p>120 (10 mutual</p>
+
+                <div class="friend-box">
+                  <div><img src="/images/member-1.png"><p>Nupur</p></div>
+                  <div><img src="/images/member-2.png"><p>Borsha</p></div>
+                  <div><img src="/images/member-3.png"><p>Sohan</p></div>
+                  <div><img src="/images/member-4.png"><p>Supta</p></div>
+                  <div><img src="/images/member-5.png"><p>Sarmin</p></div>
+                  <div><img src="/images/member-6.png"><p>Ariyan</p></div>
+                  <div><img src="/images/member-7.png"><p>Araf</p></div>
+                  <div><img src="/images/member-8.png"><p>Zayin</p></div>
+                  <div><img src="/images/member-9.png"><p>Polon</p></div>
+                 
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="post-col">
+
+                <div class="write-post-container">
+                    <div class="user-profile">
+                      <img src="/images/profile-pic.png">
+                      <div>
+                        <p>Jhon Nicholson</p>
+                        <small>Public <i class="fa-solid fa-sort-down"></i></small>
+                      </div>
+                    </div>
+        
+                    <div class="post-input-container">
+        
+                      <textarea  placeholder="What's on your mind, Jhon?" rows="3"></textarea>
+        
+                      <div class="add-post-links">
+                        <a href="#"><img src="/images/live-video.png">Live Video</a>
+                        <a href="#"><img src="/images/photo.png">Photo/Video</a>
+                        <a href="#"><img src="/images/feeling.png">Feeling/Activity</a>
+                      </div>
+                    </div>
+        
+                  </div>
+
+                  <div class="post-container">
+
+                    <div class="post-row">
+        
+                      <div class="user-profile">
+                        <img src="/images/profile-pic.png">
+                        <div>
+                          <p>Jhon Nicholson</p>
+                           <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                      </div>
+        
+                      <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+        
+                    </div>
+                    <p class="post-text">Subscribe <span>@Esay Tutorials</span> YouTube channel to watch more videos on website development and UI designs. <a href="#">#EsayTutorial</a> <a href="#">#YouTubeChannel</a></p>
+        
+                    <img src="/images/feed-image-1.png" class="post-img">
+        
+                    <div class="post-row">
+        
+                      <div class="activity-icons">
+        
+                         <div><img src="/images/like-blue.png">120</div>
+                         <div><img src="/images/comments.png">45</div>
+                         <div><img src="/images/share.png">21</div>
+        
+                      </div>
+        
+                      <div class="post-profile-icon">
+        
+                         <img src="/images/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+        
+                      </div>
+        
+                    </div>
+        
+                  </div>
+        
+                  <div class="post-container">
+        
+                    <div class="post-row">
+        
+                      <div class="user-profile">
+                        <img src="/images/profile-pic.png">
+                        <div>
+                          <p>Jhon Nicholson</p>
+                           <span>June 22 2021, 10:40 pm</span>
+                        </div>
+                      </div>
+        
+                      <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+        
+                    </div>
+                    <p class="post-text">Like and share this video with friends, tag <span>@Esay Tutorials</span> facebook page on your post. Ask your doubls in the comments. <a href="#">#EsayTutorial</a> <a href="#">#YouTubeChannel</a></p>
+        
+                    <img src="/images/feed-image-2.png" class="post-img">
+        
+                    <div class="post-row">
+        
+                      <div class="activity-icons">
+        
+                         <div><img src="/images/like (2).png">150</div>
+                         <div><img src="/images/comments.png">47</div>
+                         <div><img src="/images/share.png">17</div>
+        
+                      </div>
+        
+                      <div class="post-profile-icon">
+        
+                         <img src="/images/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+        
+                      </div>
+        
+                    </div>
+        
+                  </div>
+        
+        
+                  <div class="post-container">
+        
+                    <div class="post-row">
+        
+                      <div class="user-profile">
+                        <img src="/images/profile-pic.png">
+                        <div>
+                          <p>Jhon Nicholson</p>
+                           <span>June 23 2021, 21:40 pm</span>
+                        </div>
+                      </div>
+        
+                      <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+        
+                    </div>
+                    <p class="post-text">Like and share this video with friends, tag <span>@Esay Tutorials</span> facebook page on your post. Ask your doubls in the comments. <a href="#">#EsayTutorial</a> <a href="#">#YouTubeChannel</a></p>
+        
+                    <img src="/images/feed-image-3.png" class="post-img">
+        
+                    <div class="post-row">
+        
+                      <div class="activity-icons">
+        
+                         <div><img src="/images/like (2).png">201</div>
+                         <div><img src="/images/comments.png">62</div>
+                         <div><img src="/images/share.png">38</div>
+        
+                      </div>
+        
+                      <div class="post-profile-icon">
+        
+                         <img src="/images/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+        
+                      </div>
+        
+                    </div>
+        
+                  </div>
+        
+        
+                  <div class="post-container">
+        
+                    <div class="post-row">
+        
+                      <div class="user-profile">
+                        <img src="/images/profile-pic.png">
+                        <div>
+                          <p>Jhon Nicholson</p>
+                           <span>June 20 2021, 12:40 pm</span>
+                        </div>
+                      </div>
+        
+                      <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+        
+                    </div>
+                    <p class="post-text">Like and share this video with friends, tag <span>@Esay Tutorials</span> facebook page on your post. Ask your doubls in the comments. <a href="#">#EsayTutorial</a> <a href="#">#YouTubeChannel</a></p>
+        
+                    <img src="/images/feed-image-4.png" class="post-img">
+        
+                    <div class="post-row">
+        
+                      <div class="activity-icons">
+        
+                         <div><img src="/images/like (2).png">189</div>
+                         <div><img src="/images/comments.png">51</div>
+                         <div><img src="/images/share.png">31</div>
+        
+                      </div>
+        
+                      <div class="post-profile-icon">
+        
+                         <img src="/images/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+        
+                      </div>
+        
+                    </div>
+        
+                  </div>
+        
+        
+                  <div class="post-container">
+        
+                    <div class="post-row">
+        
+                      <div class="user-profile">
+                        <img src="/images/profile-pic.png">
+                        <div>
+                          <p>Jhon Nicholson</p>
+                           <span>June 21 2021, 08:40 pm</span>
+                        </div>
+                      </div>
+        
+                      <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+        
+                    </div>
+                    <p class="post-text">Like and share this video with friends, tag <span>@Esay Tutorials</span> facebook page on your post. Ask your doubls in the comments. <a href="#">#EsayTutorial</a> <a href="#">#YouTubeChannel</a></p>
+        
+                    <img src="/images/feed-image-5.png" class="post-img">
+        
+                    <div class="post-row">
+        
+                      <div class="activity-icons">
+        
+                         <div><img src="/images/like (2).png">197</div>
+                         <div><img src="/images/comments.png">55</div>
+                         <div><img src="/images/share.png">32</div>
+        
+                      </div>
+        
+                      <div class="post-profile-icon">
+        
+                         <img src="/images/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+        
+                      </div>
+        
+                    </div>
+        
+                  </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="footer">
+
+      <p>Copyright 2022 - Tasnem Shuvo</p>
+
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
